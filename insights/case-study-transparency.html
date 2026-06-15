@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From 3 Weeks to 2 Days: A Transparency Agent for Governance Reporting — Agentific</title>
+  <meta name="description" content="Case study: how a university used an AI transparency agent to automate council and accreditation reporting while keeping every figure auditable." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{brand:{50:'#eef2ff',100:'#e0e7ff',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca'},ink:{900:'#0b1020',800:'#11162a',700:'#1c2238'}},fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🜂</text></svg>" />
+</head>
+<body class="bg-ink-900 text-slate-200">
+  <header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-2.5 font-extrabold text-white text-lg">
+        <span class="grid place-items-center w-9 h-9 rounded-xl bg-gradient-to-br from-brand-600 to-fuchsia-500"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2"><circle cx="12" cy="12" r="3.2" fill="white" stroke="none"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></span>
+        Agentific
+      </a>
+      <a href="../index.html#contact" class="btn-primary text-white px-4 py-2 rounded-lg font-semibold text-sm">Book a consult</a>
+    </div>
+  </header>
+
+  <article class="pt-32 pb-20">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8">
+      <a href="index.html" class="text-sm text-brand-400 hover:text-brand-300">← All insights</a>
+      <span class="mt-6 inline-block text-xs font-semibold text-cyan-300 bg-cyan-400/10 rounded-full px-3 py-1.5">Case study · Governance & Transparency</span>
+      <h1 class="mt-5 text-3xl sm:text-5xl font-extrabold text-white leading-tight">From 3 weeks to 2 days: a transparency agent for governance reporting</h1>
+      <p class="mt-4 text-slate-400 text-sm">8 min read · Higher education · Illustrative engagement</p>
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Governance reporting dashboard" class="mt-8 rounded-2xl border border-white/10 w-full h-72 object-cover" />
+
+      <div class="prose-c mt-10">
+        <p><strong>The challenge.</strong> A mid-sized university spent nearly three weeks every quarter assembling governance reports — pulling numbers from the student information system, finance, HR and the learning platform into spreadsheets, then reconciling them by hand for council meetings and accreditation bodies. The process was slow, error-prone, and worst of all, opaque: when a trustee asked "where did this number come from?", no one could answer quickly.</p>
+
+        <h2>What we built</h2>
+        <p>Agentific designed a <strong>transparency & reporting agent</strong> that connects (read-only) to the institution's core systems and assembles governance reports on demand. Crucially, it was built around one principle: <em>every figure must trace back to its source.</em></p>
+        <ul>
+          <li><strong>Plain-language reports.</strong> Leaders ask, "Summarise enrolment trends and fee collection for this quarter," and get a clear written brief with charts.</li>
+          <li><strong>Click-through provenance.</strong> Every number links to the exact query and source record behind it — so any claim can be verified in seconds.</li>
+          <li><strong>Accreditation templates.</strong> Pre-mapped to NAAC and NBA reporting structures, so staff stop reformatting the same data for each body.</li>
+          <li><strong>Human sign-off.</strong> Nothing is published until a named officer reviews and approves — the agent drafts, people decide.</li>
+        </ul>
+
+        <h2>How transparency was guaranteed</h2>
+        <p>We deployed the agent inside the university's own environment. It has read-only access, logs every query it runs, and produces an audit trail that shows what was asked, what data was used, and who approved the output. There are no black boxes: a reviewer can always see the chain from headline number to raw record.</p>
+        <blockquote>"For the first time, when council asks where a figure comes from, we can show them — live, in the meeting." — Registrar (illustrative)</blockquote>
+
+        <h2>The results</h2>
+        <ul>
+          <li><strong>Report preparation fell from ~3 weeks to ~2 days.</strong></li>
+          <li><strong>Reconciliation errors dropped sharply</strong> because numbers came straight from source, not re-keyed spreadsheets.</li>
+          <li><strong>Audit queries resolved in minutes,</strong> not days, thanks to click-through provenance.</li>
+          <li><strong>Staff time was redirected</strong> from copy-paste to analysis and decision-making.</li>
+        </ul>
+
+        <h2>Why it matters</h2>
+        <p>Transparency isn't a feature you bolt on — it's a design choice. By making provenance the default, the institution got faster reporting <em>and</em> stronger accountability at the same time. That combination is exactly what regulators, trustees and the public increasingly expect.</p>
+      </div>
+
+      <div class="mt-12 glass rounded-2xl p-7 text-center">
+        <h3 class="text-xl font-bold text-white">Could your reporting be this fast?</h3>
+        <p class="mt-2 text-slate-300 text-sm">We'll map a transparency pilot for your institution in a free 30-minute consult.</p>
+        <a href="../index.html#contact" class="btn-primary inline-block mt-5 text-white px-6 py-3 rounded-xl font-semibold">Book a free consult</a>
+      </div>
+      <p class="mt-6 text-xs text-slate-500">Note: figures in this case study are illustrative, based on typical engagements, and shared to show the kind of outcome these agents enable.</p>
+    </div>
+  </article>
+
+  <footer class="border-t border-white/10 bg-ink-900">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-500">
+      <p>© <span id="year">2026</span> Agentific · agentific.in</p>
+      <a href="mailto:amit.gulati@gmail.com" class="hover:text-slate-300">amit.gulati@gmail.com</a>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

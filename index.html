@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentific — Deploy AI Agents That Run Your Organisation Better</title>
+  <meta name="description" content="Agentific helps universities and organisations deploy AI agents to run institutions with transparency, cut administrative load, and foster innovation. Strategy, pilots and production deployment." />
+  <meta name="keywords" content="AI agents, AI deployment, higher education AI, university automation, AI consulting India, agentic AI" />
+  <link rel="canonical" href="https://agentific.in/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Agentific — Deploy AI Agents That Run Your Organisation Better" />
+  <meta property="og:description" content="From strategy to production: AI agents for universities and organisations, built for transparency and impact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agentific.in/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { brand: { 50:'#eef2ff',100:'#e0e7ff',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca' }, ink: { 900:'#0b1020',800:'#11162a',700:'#1c2238' } },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'] }
+      } }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🜂</text></svg>" />
+</head>
+<body class="bg-ink-900 text-slate-200">
+
+  <!-- ============ NAV ============ -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5 font-extrabold text-white text-lg tracking-tight">
+        <span class="grid place-items-center w-9 h-9 rounded-xl bg-gradient-to-br from-brand-600 to-fuchsia-500 shadow-lg shadow-brand-600/40">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3.2" fill="white" stroke="none"/></svg>
+        </span>
+        Agentific
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#how" class="hover:text-white transition">How it works</a>
+        <a href="#education" class="hover:text-white transition">Education</a>
+        <a href="insights/index.html" class="hover:text-white transition">Insights</a>
+        <a href="#contact" class="btn-primary text-white px-4 py-2 rounded-lg font-semibold">Book a free consult</a>
+      </nav>
+
+      <button id="burger" class="md:hidden text-white p-2" aria-label="Menu">
+        <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h18M4 13h18M4 19h18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-ink-800 border-t border-white/10 px-5 py-4 space-y-3 text-slate-200">
+      <a href="#services" class="block">Services</a>
+      <a href="#how" class="block">How it works</a>
+      <a href="#education" class="block">Education</a>
+      <a href="insights/index.html" class="block">Insights</a>
+      <a href="#contact" class="block btn-primary text-white px-4 py-2 rounded-lg font-semibold text-center">Book a free consult</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="relative overflow-hidden pt-32 pb-24 sm:pt-40 sm:pb-32 bg-grid">
+    <div class="glow glow-1 w-[28rem] h-[28rem] -top-24 -left-20"></div>
+    <div class="glow glow-2 w-[24rem] h-[24rem] top-10 right-0"></div>
+    <div class="glow glow-3 w-[20rem] h-[20rem] bottom-0 left-1/3"></div>
+
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold tracking-wide uppercase text-cyan-300 bg-cyan-400/10 border border-cyan-400/20 rounded-full px-3 py-1.5 reveal">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-300 animate-pulse"></span> AI agents, deployed responsibly
+        </span>
+        <h1 class="mt-6 text-4xl sm:text-6xl font-extrabold text-white leading-[1.05] tracking-tight reveal">
+          Put <span class="text-gradient">AI agents</span> to work across your organisation
+        </h1>
+        <p class="mt-6 text-lg text-slate-300 max-w-xl reveal">
+          Agentific helps universities and organisations deploy practical AI agents — to run institutions with
+          <strong class="text-white">transparency</strong>, slash administrative load, and free your people to
+          <strong class="text-white">innovate</strong>. From first strategy to production, with guardrails built in.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4 reveal">
+          <a href="#contact" class="btn-primary text-white px-6 py-3.5 rounded-xl font-semibold">Book a free 30-min consult</a>
+          <a href="#education" class="px-6 py-3.5 rounded-xl font-semibold text-white glass hover:bg-white/10 transition">See education use cases</a>
+        </div>
+        <div class="mt-10 flex items-center gap-6 text-sm text-slate-400 reveal">
+          <div class="flex items-center gap-2"><svg width="18" height="18" fill="none" stroke="#34d399" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l4 4 8-9"/></svg> Pilot in 4 weeks</div>
+          <div class="flex items-center gap-2"><svg width="18" height="18" fill="none" stroke="#34d399" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l4 4 8-9"/></svg> Data stays yours</div>
+          <div class="flex items-center gap-2"><svg width="18" height="18" fill="none" stroke="#34d399" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l4 4 8-9"/></svg> Audit-ready by design</div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 reveal">
+        <div class="relative">
+          <div class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-brand-600/40 to-cyan-400/30 blur-xl"></div>
+          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1100&q=80"
+               alt="Abstract visualisation of an AI neural network" loading="eager"
+               class="relative rounded-3xl border border-white/10 shadow-2xl w-full object-cover h-[26rem]" />
+          <div class="absolute -bottom-5 -left-5 glass rounded-2xl p-4 w-56 shadow-xl">
+            <div class="text-xs text-slate-400">Avg. admin queries auto-resolved</div>
+            <div class="text-3xl font-extrabold text-white"><span data-count="72" data-suffix="%">0%</span></div>
+            <div class="text-[11px] text-emerald-400">↑ with a 24/7 support agent</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="border-y border-white/5 bg-ink-800/60">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-8">
+      <p class="text-center text-xs uppercase tracking-widest text-slate-500 mb-6">Built on the tools you already trust</p>
+      <div class="marquee">
+        <div class="marquee-track text-slate-400 font-semibold text-lg">
+          <span>OpenAI</span><span>Anthropic Claude</span><span>Microsoft Azure</span><span>Google Cloud</span><span>AWS</span><span>Salesforce</span><span>Microsoft 365</span><span>Moodle</span>
+          <span>OpenAI</span><span>Anthropic Claude</span><span>Microsoft Azure</span><span>Google Cloud</span><span>AWS</span><span>Salesforce</span><span>Microsoft 365</span><span>Moodle</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="py-24 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl reveal">
+        <span class="text-cyan-300 font-semibold text-sm uppercase tracking-wider">What we do</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white">From idea to AI agents in production</h2>
+        <p class="mt-4 text-slate-300">We meet you wherever you are — exploring, piloting, or scaling — and own the messy middle so you get outcomes, not slideware.</p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <!-- card -->
+        <div class="glass card-hover rounded-2xl p-7 reveal">
+          <div class="w-12 h-12 grid place-items-center rounded-xl bg-brand-600/20 text-brand-400 mb-5">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white">AI Strategy & Readiness</h3>
+          <p class="mt-3 text-slate-300 text-sm leading-relaxed">A clear, prioritised roadmap. We audit your processes, data and risks, then identify the 3–5 use cases with the fastest, safest ROI.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-400">
+            <li class="flex gap-2"><span class="text-cyan-400">›</span> Opportunity & ROI mapping</li>
+            <li class="flex gap-2"><span class="text-cyan-400">›</span> Data & governance review</li>
+            <li class="flex gap-2"><span class="text-cyan-400">›</span> Responsible-AI guardrails</li>
+          </ul>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-7 reveal">
+          <div class="w-12 h-12 grid place-items-center rounded-xl bg-cyan-500/20 text-cyan-300 mb-5">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12l3 3 5-6"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white">Agent Design & Build</h3>
+          <p class="mt-3 text-slate-300 text-sm leading-relaxed">We design, build and integrate AI agents into your real systems — student portals, ERPs, CRMs and helpdesks — with humans in the loop where it matters.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-400">
+            <li class="flex gap-2"><span class="text-cyan-400">›</span> Custom agents & copilots</li>
+            <li class="flex gap-2"><span class="text-cyan-400">›</span> RAG over your knowledge base</li>
+            <li class="flex gap-2"><span class="text-cyan-400">›</span> Secure system integrations</li>
+          </ul>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-7 reveal">
+          <div class="w-12 h-12 grid place-items-center rounded-xl bg-fuchsia-500/20 text-fuchsia-300 mb-5">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white">Scale, Train & Govern</h3>
+          <p class="mt-3 text-slate-300 text-sm leading-relaxed">We take pilots to production, upskill your teams, and put monitoring, evaluation and transparency dashboards in place so you stay in control.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-400">
+            <li class="flex gap-2"><span class="text-cyan-400">›</span> Staff enablement & training</li>
+            <li class="flex gap-2"><span class="text-cyan-400">›</span> Monitoring & evaluation</li>
+            <li class="flex gap-2"><span class="text-cyan-400">›</span> Audit & transparency reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how" class="py-24 sm:py-28 bg-ink-800/50 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl reveal">
+        <span class="text-cyan-300 font-semibold text-sm uppercase tracking-wider">How it works</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white">A low-risk path from pilot to impact</h2>
+        <p class="mt-4 text-slate-300">Start small, prove value in weeks, then scale what works. You see results before committing to anything big.</p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-4 gap-6">
+        <div class="reveal">
+          <div class="text-5xl font-black text-brand-500/40">01</div>
+          <h3 class="mt-2 text-lg font-bold text-white">Discover</h3>
+          <p class="mt-2 text-sm text-slate-400">A free workshop to find your highest-value, lowest-risk use case.</p>
+        </div>
+        <div class="reveal">
+          <div class="text-5xl font-black text-brand-500/40">02</div>
+          <h3 class="mt-2 text-lg font-bold text-white">Pilot</h3>
+          <p class="mt-2 text-sm text-slate-400">A working agent on real data in ~4 weeks, with measurable success criteria.</p>
+        </div>
+        <div class="reveal">
+          <div class="text-5xl font-black text-brand-500/40">03</div>
+          <h3 class="mt-2 text-lg font-bold text-white">Deploy</h3>
+          <p class="mt-2 text-sm text-slate-400">Integrate, secure and roll out to staff and students with proper guardrails.</p>
+        </div>
+        <div class="reveal">
+          <div class="text-5xl font-black text-brand-500/40">04</div>
+          <h3 class="mt-2 text-lg font-bold text-white">Scale</h3>
+          <p class="mt-2 text-sm text-slate-400">Monitor, improve and expand to new departments and use cases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION USE CASES ============ -->
+  <section id="education" class="py-24 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5 reveal">
+          <span class="text-cyan-300 font-semibold text-sm uppercase tracking-wider">Spotlight: Higher Education</span>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white">Run your institution with transparency — and foster real innovation</h2>
+          <p class="mt-4 text-slate-300">Universities sit on rich data and heavy administrative load. AI agents handle the repetitive work, surface insight for leaders, and give students faster, fairer service — while every decision stays explainable and audit-ready.</p>
+          <a href="insights/index.html" class="mt-6 inline-flex items-center gap-2 text-brand-400 font-semibold hover:text-brand-300">
+            Read the case studies
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="lg:col-span-7 reveal">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1100&q=80"
+               alt="University students on campus" loading="lazy"
+               class="rounded-3xl border border-white/10 shadow-2xl w-full object-cover h-80" />
+        </div>
+      </div>
+
+      <!-- use case grid -->
+      <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 1 -->
+        <article class="glass card-hover rounded-2xl overflow-hidden reveal">
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80" alt="Students in a lecture hall" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <span class="text-xs font-semibold text-cyan-300 bg-cyan-400/10 rounded-full px-2.5 py-1">Student Experience</span>
+            <h3 class="mt-3 text-lg font-bold text-white">24/7 Student Support Agent</h3>
+            <p class="mt-2 text-sm text-slate-400">Answers admissions, fees, timetable and hostel queries instantly in multiple languages — escalating to staff only when truly needed.</p>
+          </div>
+        </article>
+        <!-- 2 -->
+        <article class="glass card-hover rounded-2xl overflow-hidden reveal">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Analytics and reports on a desk" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <span class="text-xs font-semibold text-fuchsia-300 bg-fuchsia-400/10 rounded-full px-2.5 py-1">Governance</span>
+            <h3 class="mt-3 text-lg font-bold text-white">Transparency & Reporting Agent</h3>
+            <p class="mt-2 text-sm text-slate-400">Turns scattered data into plain-language dashboards for NAAC/NBA, audits and council meetings — every figure traceable to its source.</p>
+          </div>
+        </article>
+        <!-- 3 -->
+        <article class="glass card-hover rounded-2xl overflow-hidden reveal">
+          <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" alt="University campus building" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <span class="text-xs font-semibold text-emerald-300 bg-emerald-400/10 rounded-full px-2.5 py-1">Admissions</span>
+            <h3 class="mt-3 text-lg font-bold text-white">Admissions Triage Agent</h3>
+            <p class="mt-2 text-sm text-slate-400">Screens applications against transparent criteria, flags missing documents, and gives every applicant a fast, consistent, bias-checked response.</p>
+          </div>
+        </article>
+        <!-- 4 -->
+        <article class="glass card-hover rounded-2xl overflow-hidden reveal">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" alt="Student studying with laptop" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <span class="text-xs font-semibold text-cyan-300 bg-cyan-400/10 rounded-full px-2.5 py-1">Student Success</span>
+            <h3 class="mt-3 text-lg font-bold text-white">Early-Warning & Retention Agent</h3>
+            <p class="mt-2 text-sm text-slate-400">Spots students at risk from attendance and grade signals, and nudges mentors to intervene — improving outcomes and retention.</p>
+          </div>
+        </article>
+        <!-- 5 -->
+        <article class="glass card-hover rounded-2xl overflow-hidden reveal">
+          <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=800&q=80" alt="Library bookshelves" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <span class="text-xs font-semibold text-fuchsia-300 bg-fuchsia-400/10 rounded-full px-2.5 py-1">Faculty Productivity</span>
+            <h3 class="mt-3 text-lg font-bold text-white">Research & Grants Copilot</h3>
+            <p class="mt-2 text-sm text-slate-400">Helps faculty find funding, draft proposals and summarise literature — so more time goes to teaching and discovery.</p>
+          </div>
+        </article>
+        <!-- 6 -->
+        <article class="glass card-hover rounded-2xl overflow-hidden reveal">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Administrative workspace" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <span class="text-xs font-semibold text-emerald-300 bg-emerald-400/10 rounded-full px-2.5 py-1">Operations</span>
+            <h3 class="mt-3 text-lg font-bold text-white">Administrative Workflow Agent</h3>
+            <p class="mt-2 text-sm text-slate-400">Automates approvals, scheduling, procurement and routine paperwork — cutting turnaround from days to minutes.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ METRICS ============ -->
+  <section class="py-20 bg-gradient-to-br from-brand-700/30 via-ink-800 to-ink-900 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="reveal"><div class="text-4xl sm:text-5xl font-black text-white"><span data-count="4" data-suffix=" wks">0</span></div><div class="mt-2 text-sm text-slate-400">From kickoff to a live pilot</div></div>
+      <div class="reveal"><div class="text-4xl sm:text-5xl font-black text-white"><span data-count="72" data-suffix="%">0</span></div><div class="mt-2 text-sm text-slate-400">Routine queries auto-resolved</div></div>
+      <div class="reveal"><div class="text-4xl sm:text-5xl font-black text-white"><span data-count="60" data-suffix="%">0</span></div><div class="mt-2 text-sm text-slate-400">Less admin turnaround time</div></div>
+      <div class="reveal"><div class="text-4xl sm:text-5xl font-black text-white"><span data-count="100" data-suffix="%">0</span></div><div class="mt-2 text-sm text-slate-400">Decisions traceable & auditable</div></div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="py-24 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal">
+        <span class="text-cyan-300 font-semibold text-sm uppercase tracking-wider">Why Agentific</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white">Practical AI, deployed responsibly</h2>
+        <p class="mt-4 text-slate-300">We're not here to sell hype. We're here to put working agents into your hands and leave your team more capable than we found them.</p>
+        <div class="mt-8 space-y-6">
+          <div class="flex gap-4">
+            <div class="shrink-0 w-11 h-11 grid place-items-center rounded-xl bg-brand-600/20 text-brand-400"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <div><h3 class="font-bold text-white">Transparency by default</h3><p class="text-sm text-slate-400 mt-1">Every agent action is logged, explainable and reviewable. Leaders stay accountable; auditors stay happy.</p></div>
+          </div>
+          <div class="flex gap-4">
+            <div class="shrink-0 w-11 h-11 grid place-items-center rounded-xl bg-cyan-500/20 text-cyan-300"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+            <div><h3 class="font-bold text-white">Outcomes, not slideware</h3><p class="text-sm text-slate-400 mt-1">We measure success in resolved queries, hours saved and faster decisions — agreed up front, reported honestly.</p></div>
+          </div>
+          <div class="flex gap-4">
+            <div class="shrink-0 w-11 h-11 grid place-items-center rounded-xl bg-fuchsia-500/20 text-fuchsia-300"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 00-7 7c0 3 2 4 2 6h10c0-2 2-3 2-6a7 7 0 00-7-7z"/><path d="M9 21h6"/></svg></div>
+            <div><h3 class="font-bold text-white">Your data, your control</h3><p class="text-sm text-slate-400 mt-1">We deploy in your environment with the model of your choice. No lock-in, no surprise data sharing.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1100&q=80" alt="Team collaborating around a laptop" loading="lazy" class="rounded-3xl border border-white/10 shadow-2xl w-full object-cover h-[30rem]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSIGHTS PREVIEW ============ -->
+  <section class="py-24 sm:py-28 bg-ink-800/50 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-wrap items-end justify-between gap-4 reveal">
+        <div>
+          <span class="text-cyan-300 font-semibold text-sm uppercase tracking-wider">Insights & case studies</span>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white">Ideas you can act on</h2>
+        </div>
+        <a href="insights/index.html" class="text-brand-400 font-semibold hover:text-brand-300">View all →</a>
+      </div>
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <a href="insights/case-study-transparency.html" class="glass card-hover rounded-2xl overflow-hidden reveal block">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Dashboard analytics" loading="lazy" class="h-44 w-full object-cover" />
+          <div class="p-6"><span class="text-xs text-cyan-300">Case study</span><h3 class="mt-2 font-bold text-white text-lg">How a university cut report prep from 3 weeks to 2 days</h3><p class="mt-2 text-sm text-slate-400">A transparency agent that makes governance reporting effortless and audit-ready.</p></div>
+        </a>
+        <a href="insights/case-study-admissions.html" class="glass card-hover rounded-2xl overflow-hidden reveal block">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="People in discussion" loading="lazy" class="h-44 w-full object-cover" />
+          <div class="p-6"><span class="text-xs text-emerald-300">Case study</span><h3 class="mt-2 font-bold text-white text-lg">Fairer, faster admissions with a triage agent</h3><p class="mt-2 text-sm text-slate-400">Consistent, bias-checked screening that responds to every applicant in minutes.</p></div>
+        </a>
+        <a href="insights/article-ai-higher-ed.html" class="glass card-hover rounded-2xl overflow-hidden reveal block">
+          <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=800&q=80" alt="University campus aerial" loading="lazy" class="h-44 w-full object-cover" />
+          <div class="p-6"><span class="text-xs text-fuchsia-300">Article</span><h3 class="mt-2 font-bold text-white text-lg">5 places to start with AI in higher education</h3><p class="mt-2 text-sm text-slate-400">A practical guide for vice-chancellors and registrars who want impact without the hype.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / LEAD FORM ============ -->
+  <section id="contact" class="py-24 sm:py-28">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="glass rounded-3xl overflow-hidden grid lg:grid-cols-2">
+        <div class="p-8 sm:p-12 bg-gradient-to-br from-brand-700/40 to-fuchsia-700/20">
+          <h2 class="text-3xl font-extrabold text-white">Let's find your first AI win</h2>
+          <p class="mt-4 text-slate-200">Book a free 30-minute consult. We'll discuss your goals, identify one high-value use case, and outline a low-risk pilot — no obligation.</p>
+          <ul class="mt-8 space-y-4 text-slate-200">
+            <li class="flex gap-3"><svg width="22" height="22" fill="none" stroke="#67e8f9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l4 4 8-9"/></svg> A prioritised use-case shortlist</li>
+            <li class="flex gap-3"><svg width="22" height="22" fill="none" stroke="#67e8f9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l4 4 8-9"/></svg> A rough ROI & timeline estimate</li>
+            <li class="flex gap-3"><svg width="22" height="22" fill="none" stroke="#67e8f9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l4 4 8-9"/></svg> Clear next steps you own</li>
+          </ul>
+          <div class="mt-10 pt-8 border-t border-white/10 text-sm text-slate-300">
+            <p class="font-semibold text-white">Prefer email?</p>
+            <a href="mailto:amit.gulati@gmail.com" class="text-cyan-300 hover:underline">amit.gulati@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="p-8 sm:p-12">
+          <!-- Replace FORMSPREE_ID with your Formspree form id (see README). Until then, submissions open the user's email client to you. -->
+          <form id="lead-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST" class="space-y-5">
+            <div>
+              <label class="block text-sm font-medium text-slate-300 mb-1.5">Full name *</label>
+              <input name="name" required type="text" class="w-full rounded-xl bg-ink-800 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none" placeholder="Dr. Asha Menon" />
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-slate-300 mb-1.5">Work email *</label>
+                <input name="email" required type="email" class="w-full rounded-xl bg-ink-800 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none" placeholder="you@university.edu" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-300 mb-1.5">Organisation</label>
+                <input name="organisation" type="text" class="w-full rounded-xl bg-ink-800 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none" placeholder="Name of your institution" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-300 mb-1.5">I'm interested in</label>
+              <select name="interest" class="w-full rounded-xl bg-ink-800 border border-white/10 px-4 py-3 text-white focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none">
+                <option>AI strategy & roadmap</option>
+                <option>Student support agent</option>
+                <option>Transparency & reporting</option>
+                <option>Admissions automation</option>
+                <option>Staff training & enablement</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-300 mb-1.5">What would you like to solve?</label>
+              <textarea name="message" rows="3" class="w-full rounded-xl bg-ink-800 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/40 outline-none" placeholder="Tell us a little about your goals…"></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full text-white px-6 py-3.5 rounded-xl font-semibold">Request my free consult</button>
+            <p id="form-status" class="text-sm"></p>
+            <p class="text-xs text-slate-500">We respect your privacy. Your details are used only to respond to your enquiry.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-white/10 bg-ink-900">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <a href="index.html" class="flex items-center gap-2.5 font-extrabold text-white text-lg">
+          <span class="grid place-items-center w-9 h-9 rounded-xl bg-gradient-to-br from-brand-600 to-fuchsia-500"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="3.2" fill="white" stroke="none"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></span>
+          Agentific
+        </a>
+        <p class="mt-4 text-sm text-slate-400 max-w-sm">Deploying practical AI agents into organisations — built for transparency, measured by impact.</p>
+        <a href="mailto:amit.gulati@gmail.com" class="mt-4 inline-block text-sm text-cyan-300 hover:underline">amit.gulati@gmail.com</a>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4 text-sm">Company</h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="#services" class="hover:text-white">Services</a></li>
+          <li><a href="#how" class="hover:text-white">How it works</a></li>
+          <li><a href="#education" class="hover:text-white">Education</a></li>
+          <li><a href="insights/index.html" class="hover:text-white">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4 text-sm">Get started</h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="#contact" class="hover:text-white">Book a consult</a></li>
+          <li><a href="mailto:amit.gulati@gmail.com" class="hover:text-white">Email us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-500">
+        <p>© <span id="year">2026</span> Agentific · agentific.in. All rights reserved.</p>
+        <p>Images via <a href="https://unsplash.com" class="hover:text-slate-300">Unsplash</a>. Made in India 🇮🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
